@@ -1,5 +1,6 @@
 window.onload = function (){
-    let area =[[0,0,0],[0,0,0],[0,0,0]]
+    var area =[[0,0,0],[0,0,0],[0,0,0]];
+    let fil = true;
 }
 
 const marubatu1 = document.getElementById('img1');
@@ -11,5 +12,13 @@ const marubatu6 = document.getElementById('img6');
 const marubatu7 = document.getElementById('img7');
 const marubatu8 = document.getElementById('img8');
 const marubatu9 = document.getElementById('img9');
+
+marubatu1.addEventListener('click',areaCheck1);
+
+function areaCheck1(){
+    if(area[0][0])
+}
+
+
 
 
