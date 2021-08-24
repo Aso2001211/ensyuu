@@ -115,7 +115,35 @@ function process (tate,yoko,basyo){
 
 //○を挿入する
 function maruInsert(basyo){
-
+    switch (basyo){
+        case 1:
+            marubatu1.src='img/maru.png';
+            break;
+        case 2:
+            marubatu2.src='img/maru.png';
+            break;
+        case 3:
+            marubatu3.src='img/maru.png';
+            break;
+        case 4:
+            marubatu4.src='img/maru.png';
+            break;
+        case 5:
+            marubatu5.src='img/maru.png';
+            break;
+        case 6:
+            marubatu6.src='img/maru.png';
+            break;
+        case 7:
+            marubatu7.src='img/maru.png';
+            break;
+        case 8:
+            marubatu8.src='img/maru.png';
+            break;
+        case 9:
+            marubatu9.src='img/maru.png';
+            break;
+    }
 }
 
 
@@ -123,31 +151,31 @@ function maruInsert(basyo){
 function batuInsert(basyo){
     switch (basyo){
         case 1:
-
+            marubatu1.src='img/batu.png';
             break;
         case 2:
-
+            marubatu2.src='img/batu.png';
             break;
         case 3:
-
+            marubatu3.src='img/batu.png';
             break;
         case 4:
-
+            marubatu4.src='img/batu.png';
             break;
         case 5:
-
+            marubatu5.src='img/batu.png';
             break;
         case 6:
-
+            marubatu6.src='img/batu.png';
             break;
         case 7:
-
+            marubatu7.src='img/batu.png';
             break;
         case 8:
-
+            marubatu8.src='img/batu.png';
             break;
         case 9:
-
+            marubatu9.src='img/batu.png';
             break;
     }
 }
