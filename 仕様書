@@ -7,3 +7,10 @@
   
 
 OOのターン 文字列(turn)
+
+
+#ディレクトリ
+.index.html
+.js/marubatu.js
+.img/
+.css/
