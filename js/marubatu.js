@@ -115,7 +115,6 @@ function process (tate,yoko,basyo){
 
 //○を挿入する
 function maruInsert(basyo){
-    winORlose();
     switch (basyo){
         case 1:
             marubatu1.src='img/maru.png';
@@ -145,13 +144,12 @@ function maruInsert(basyo){
             marubatu9.src='img/maru.png';
             break;
     }
-
+    winORlose();
 }
 
 
 //×を挿入する
 function batuInsert(basyo){
-    winORlose();
     switch (basyo){
         case 1:
             marubatu1.src='img/batu.png';
@@ -181,7 +179,7 @@ function batuInsert(basyo){
             marubatu9.src='img/batu.png';
             break;
     }
-
+    winORlose();
 }
 
 
