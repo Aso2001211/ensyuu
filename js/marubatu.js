@@ -105,13 +105,12 @@ function process (tate,yoko,basyo){
         plaice[tate][yoko]=1;
         fil=false;
         maruInsert(basyo);
-        winORlose();
     }else{
         plaice[tate][yoko]=2;
         fil=true;
         batuInsert(basyo);
-        winORlose();
     }
+    winORlose();
     turnChange();
 }
 
