@@ -102,13 +102,13 @@ function areaCheck9(){
 //○×を記録する、フラグを逆にする
 function process (tate,yoko,basyo){
     if(fil===true){
-        maruInsert(basyo);
         plaice[tate][yoko]=1;
         fil=false;
+        maruInsert(basyo);
     }else{
-        batuInsert(basyo);
         plaice[tate][yoko]=2;
         fil=true;
+        batuInsert(basyo);
     }
     turnChange();
 }
