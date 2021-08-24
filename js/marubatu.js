@@ -99,7 +99,7 @@ function areaCheck9(){
 }
 
 
-//○×を入れる、フラグを逆にする
+//○×を記録する、フラグを逆にする
 function process (tate,yoko,basyo){
     if(fil===true){
         maruInsert(basyo);
@@ -144,6 +144,7 @@ function maruInsert(basyo){
             marubatu9.src='img/maru.png';
             break;
     }
+    winORlose();
 }
 
 
@@ -178,6 +179,7 @@ function batuInsert(basyo){
             marubatu9.src='img/batu.png';
             break;
     }
+    winORlose();
 }
 
 
@@ -187,6 +189,17 @@ function turnChange(){
         turnMessage.innerText = '○のターンです';
     }else{
         turnMessage.innerText = '×のターンです';
+    }
+}
+
+//勝利判定
+function winORlose(){
+    let tate1=[plaice[0][0],plaice[0][1],plaice[0][2]];
+    if (tate1[0]==1 && tate1[1]==1 && tate1[2]==1){
+        alert(`○の勝利です！`);
+        return;
+    }else if (tate1[0]==1 && tate1[1]==1 && tate1[2]==1){
+
     }
 }
 
