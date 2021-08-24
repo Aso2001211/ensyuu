@@ -5,6 +5,7 @@ img{
     padding: 1px 5px;
 }
 button{
+    width: 130px;
     border: none;
     margin: auto;
     background-color: #E6E4DD;
