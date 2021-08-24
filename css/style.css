@@ -4,3 +4,9 @@ body{
 img{
     padding: 1px 5px;
 }
+button{
+    border: none;
+    margin: auto;
+    background-color: #E6E4DD;
+    border-radius: 4px;
+}
