@@ -194,12 +194,61 @@ function turnChange(){
 
 //勝利判定
 function winORlose(){
-    let tate1=[plaice[0][0],plaice[0][1],plaice[0][2]];
-    if (tate1[0]==1 && tate1[1]==1 && tate1[2]==1){
+    //横上列
+    let yoko1=[plaice[0][0],plaice[0][1],plaice[0][2]];
+    if (yoko1[0]===1 && yoko1[1]===1 && yoko1[2]===1){
         alert(`○の勝利です！`);
-        return;
-    }else if (tate1[0]==1 && tate1[1]==1 && tate1[2]==1){
-
+    }else if (yoko1[0]===2 && yoko1[1]===2 && yoko1[2]===2){
+        alert('×の勝利です');
+    }
+    //横中列
+    let yoko2=[plaice[1][0],plaice[1][1],plaice[1][2]];
+    if (yoko2[0]===1 && yoko2[1]===1 && yoko2[2]===1){
+        alert(`○の勝利です！`);
+    }else if (yoko2[0]===2 && yoko2[1]===2 && yoko2[2]===2){
+        alert('×の勝利です');
+    }
+    //横下列
+    let yoko3=[plaice[2][0],plaice[2][1],plaice[2][2]];
+    if (yoko3[0]===1 && yoko3[1]===1 && yoko3[2]===1){
+        alert(`○の勝利です！`);
+    }else if (yoko3[0]===2 && yoko3[1]===2 && yoko3[2]===2){
+        alert('×の勝利です');
+    }
+    //縦左列
+    let tate1=[plaice[0][0],plaice[1][0],plaice[2][0]];
+    if (tate1[0]===1 && tate[1]===1 && tate1[2]===1){
+        alert(`○の勝利です！`);
+    }else if (tate1[0]===2 && tate1[1]===2 && tate1[2]===2){
+        alert('×の勝利です');
+    }
+    //縦中列
+    let tate2=[plaice[0][1],plaice[1][1],plaice[2][1]];
+    if (tate2[0]===1 && tate2[1]===1 && tate2[2]===1){
+        alert(`○の勝利です！`);
+    }else if (tate2[0]===2 && tate2[1]===2 && tate2[2]===2){
+        alert('×の勝利です');
+    }
+    //縦右列
+    let tate3=[plaice[0][2],plaice[1][2],plaice[2][2]];
+    if (tate3[0]===1 && tate3[1]===1 && tate3[2]===1){
+        alert(`○の勝利です！`);
+    }else if (tate3[0]===2 && tate3[1]===2 && tate3[2]===2){
+        alert('×の勝利です');
+    }
+    //左上から右下にかけての斜め
+    let naname1=[plaice[0][0],plaice[1][1],plaice[2][2]];
+    if (naname1[0]===1 && naname1[1]===1 && naname1[2]===1){
+        alert(`○の勝利です！`);
+    }else if (naname1[0]===2 && naname1[1]===2 && naname1[2]===2){
+        alert('×の勝利です');
+    }
+    //右上から左下にかけての斜め
+    let naname2=[plaice[0][2],plaice[1][1],plaice[2][0]];
+    if (naname2[0]===1 && naname2[1]===1 && naname2[2]===1){
+        alert(`○の勝利です！`);
+    }else if (naname2[0]===2 && naname2[1]===2 && naname2[2]===2){
+        alert('×の勝利です');
     }
 }
 
