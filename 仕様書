@@ -1,7 +1,9 @@
-#id命名規則
+#命名規則
 9つのマス（img1~img9)
+画像名
+  空白(siro.png)
+  まる(maru.png)
+  ばつ(batu.png)
+  
 
 OOのターン 文字列(turn)
-
-
-白画像 shiro.png
