@@ -105,10 +105,12 @@ function process (tate,yoko,basyo){
         plaice[tate][yoko]=1;
         fil=false;
         maruInsert(basyo);
+        winORlose();
     }else{
         plaice[tate][yoko]=2;
         fil=true;
         batuInsert(basyo);
+        winORlose();
     }
     turnChange();
 }
@@ -144,7 +146,6 @@ function maruInsert(basyo){
             marubatu9.src='img/maru.png';
             break;
     }
-    winORlose();
 }
 
 
@@ -179,7 +180,6 @@ function batuInsert(basyo){
             marubatu9.src='img/batu.png';
             break;
     }
-    winORlose();
 }
 
 
