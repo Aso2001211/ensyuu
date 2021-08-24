@@ -219,7 +219,7 @@ function winORlose(){
     }
     //縦左列
     let tate1=[plaice[0][0],plaice[1][0],plaice[2][0]];
-    if (tate1[0]===1 && tate[1]===1 && tate1[2]===1){
+    if (tate1[0]===1 && tate1[1]===1 && tate1[2]===1){
         alert(`○の勝利です！`);
     }else if (tate1[0]===2 && tate1[1]===2 && tate1[2]===2){
         alert('×の勝利です');
